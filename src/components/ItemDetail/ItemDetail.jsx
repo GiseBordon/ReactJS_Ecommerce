@@ -8,10 +8,10 @@ import { Card } from 'react-bootstrap';
 
 //este es un componente funcional que me muestra el detalle de cada card
 
-const ItemDetail = (product) => {
+const ItemDetail = ({product}) => {
 
   const { categoryId } = useParams()
-  const [stock, setStock] = useState(0);
+  const [, setStock] = useState(0);
   const onAdd = (cantidad) => console.log('cantidad de productos seleccionados', cantidad)
 
   /* console.log(product) */
@@ -35,7 +35,7 @@ const ItemDetail = (product) => {
         </Card>
       </div>
       <div className="col">
-        <ItemCount stock={stock} inicio={1} onAdd={onAdd} />
+        <ItemCount stock={product.stock} inicio={0} onAdd={onAdd} />
       </div>
     </div>
 

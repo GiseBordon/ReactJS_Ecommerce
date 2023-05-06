@@ -1,5 +1,5 @@
 
-import { Button, Row, Col, Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 //componente funcional que me muestra la card de cada producto

@@ -6,7 +6,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "8",
+        stock: "0",
         image: "https://picsum.photos/id/237/200/100"
     }, {
         id: "2",
