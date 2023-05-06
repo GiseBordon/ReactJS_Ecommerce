@@ -1,12 +1,13 @@
 import React from 'react'
-import cartWidget from './assets/cartWidget.png'
+import cart  from "../CartWidget/assets/cartWidget.png";
 
-
+//aca esta el icono de carrito que informa la cantidad de productos agregados
 export const CartWidget = () => {
   return (
-    <div>
-        <img src={cartWidget} alt="cart" width={'40px'} />
-        2
-    </div>
+    <>
+    <img src={cart} width = {40} alt="carrito" />
+    {/* contenido hardcodeado */}
+    </>
+    
   )
 }

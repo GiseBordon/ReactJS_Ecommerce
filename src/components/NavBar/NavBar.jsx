@@ -1,38 +1,31 @@
-import React from 'react'
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { CartWidget } from '../CartWidget/CartWidget'
+
+import { NavLink } from 'react-router-dom';
+import { CartWidget } from '../CartWidget/CartWidget';
 
 
-export const NavBar = () => {
+
+const NavBar = () => {
   return (
-
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <div>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <NavLink className={({ isActive }) => isActive ? 'btn btn-info' : "btn btn-outline-info"} to="/">Productos</NavLink>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Carrito</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Categoria 1</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Categoria 2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Categoria 3</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                ver todos
-              </NavDropdown.Item>
-            </NavDropdown>
+            <NavLink className={({ isActive }) => isActive ? 'btn btn-info' : 'btn btn-outline-info'} to="/category/Producto A">Categoria A</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'btn btn-info' : 'btn btn-outline-info'} to="/category/Producto B">Categoria B</NavLink>
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-      <CartWidget />
-    </Navbar>
-
+          <Nav>
+            <NavLink to="/carrito"><CartWidget/></NavLink>
+            
+          </Nav>
+        </Container>
+      </Navbar>
+    </div>
   )
 }
+
+export default NavBar
