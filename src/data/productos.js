@@ -6,7 +6,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "0",
+        stock: 0,
         image: "https://picsum.photos/id/237/200/100"
     }, {
         id: "2",
@@ -15,7 +15,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "5",
+        stock: 5,
         image: "https://picsum.photos/id/236/200/100"
     }, {
         id: "3",
@@ -24,7 +24,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "4",
+        stock: 4,
         image: "https://picsum.photos/id/235/200/100"
     }, {
         id: "4",
@@ -33,7 +33,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "10",
+        stock: 10,
         image: "https://picsum.photos/id/234/200/100"
     }, {
         id: "5",
@@ -42,7 +42,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "6",
+        stock: 6,
         image: "https://picsum.photos/id/233/200/100"
     }, {
         id: "6",
@@ -51,7 +51,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "4",
+        stock: 4,
         image: "https://picsum.photos/id/232/200/100"
     }, {
         id: "7",
@@ -60,7 +60,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "7",
+        stock: 7,
         image: "https://picsum.photos/id/231/200/100"
     }, {
         id: "8",
@@ -69,7 +69,7 @@ const productos = [
         author: "Sherlocke Bickardike",
         description: "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
         price: 23999.23,
-        stock: "3",
+        stock: 3,
         image: "https://picsum.photos/id/229/200/100"
     }]
 
